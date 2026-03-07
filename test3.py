@@ -22,3 +22,4 @@ image = image.resize((disp.width, disp.height), resample=Image.LANCZOS)
 
 # Show it on display
 disp.display(image)
+# end of the list
