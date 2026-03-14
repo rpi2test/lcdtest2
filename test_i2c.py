@@ -10,7 +10,7 @@ serial = i2c(port=1, address=0x3C)
 device = ssd1306(serial, width=128, height=32)
 
 with canvas(device) as draw:
-    draw.rectangle(device.bounding_box, outline="white", fill="black")
-    draw.text((5, 10), "Hello 128x32!", fill="white")
+    # draw.rectangle(device.bounding_box, outline="white", fill="black")
+    draw.text((0, 0), "Hello 128x32 1234567890\nLine2\nLine3", fill="white")
 
 sleep(10)
