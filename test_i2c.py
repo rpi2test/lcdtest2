@@ -11,6 +11,7 @@ device = ssd1306(serial, width=128, height=32)
 
 with canvas(device) as draw:
     # draw.rectangle(device.bounding_box, outline="white", fill="black")
-    draw.text((0, 0), "Hello 128x32 1234567890\nLine2\nLine3", fill="white")
+    draw.text((0, 0), "The Who - Who's Next", fill="white")
+    draw.text((0, 16), "We Won't Get Fool Again Test 123", fill="white")
 
 sleep(10)
