@@ -32,7 +32,8 @@ image = image.resize((disp.width, disp.height), resample=Image.LANCZOS)
 # image = Image.new("RGB", (disp.width, disp.height), (0, 50, 0))
 # Draw some text
 draw = ImageDraw.Draw(image)
-draw.text((0, 0), "ABC", font=FONT_ROBOTO, fill=COLOR_ORANGE)
+draw.text((0, 180), "The Who - Who's Next", font=FONT_ROBOTO, fill=COLOR_ORANGE)
+draw.text((0, 200), "We Won't Get Fool Again", font=FONT_ROBOTO, fill=COLOR_ORANGE)
 
 # Show it on display
 disp.display(image)
