@@ -22,17 +22,17 @@ FONT_NOTO = ImageFont.truetype("NotoSansCJK-Regular.ttc", 48)
 COLOR_ORANGE = (255, 167, 38)
 
 # Open image file
-# image = Image.open("whosnext.jpg")
+image = Image.open("whosnext.jpg")
 
 # Resize to screen size
-# image = image.resize((disp.width, disp.height), resample=Image.LANCZOS)
+image = image.resize((disp.width, disp.height), resample=Image.LANCZOS)
 
 ###
 # Create an image with black background
-image = Image.new("RGB", (disp.width, disp.height), (0, 50, 0))
+# image = Image.new("RGB", (disp.width, disp.height), (0, 50, 0))
 # Draw some text
-draw = ImageDraw.Draw(image)
-draw.text((0, 0), "ABC", font=FONT_ROBOTO, fill=COLOR_ORANGE)
+# draw = ImageDraw.Draw(image)
+# draw.text((0, 0), "ABC", font=FONT_ROBOTO, fill=COLOR_ORANGE)
 
 # Show it on display
 disp.display(image)
