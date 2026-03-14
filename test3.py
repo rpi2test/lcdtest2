@@ -32,7 +32,7 @@ COLOR_ORANGE = (255, 167, 38)
 image = Image.new("RGB", (disp.width, disp.height), (0, 50, 0))
 # Draw some text
 draw = ImageDraw.Draw(image)
-draw.text((0, 0), "みかんの", font=FONT_NOTO, fill=COLOR_ORANGE)
+draw.text((0, 0), "ABC", font=FONT_ROBOTO, fill=COLOR_ORANGE)
 
 # Show it on display
 disp.display(image)
