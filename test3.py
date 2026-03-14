@@ -27,6 +27,9 @@ image = Image.open("whosnext.jpg")
 # Resize to screen size
 image = image.resize((disp.width, disp.height), resample=Image.LANCZOS)
 
+###
+# Create an image with black background
+image = Image.new("RGB", (disp.width, disp.height), (0, 0, 0))
 # Draw some text
 draw = ImageDraw.Draw(image)
 draw.text((0, 0), "みかんの", font=FONT_NOTO, fill=COLOR_ORANGE)
