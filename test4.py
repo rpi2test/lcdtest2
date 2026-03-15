@@ -13,7 +13,7 @@ def do_nothing(obj):
     pass  # No-op to prevent clearing
 
 # Create a display instance
-disp = st7789.ST7789(port=0, cs=0, rst=5, dc=6, rotation=1, backlight=None,
+disp = st7789.ST7789(port=0, cs=0, rst=5, dc=6, rotation=90, backlight=None,
                         spi_speed_hz=80 * 1000 * 1000)
 
 # Added: Change to SPI MODE 3
